@@ -1,0 +1,23 @@
+{
+  "require": {
+  	"phpexcel/phpexcel": "^1.7",
+    "klein/klein": "^2.1"
+  },
+  "repositories": {
+    "packagist": {
+      "type": "composer",
+      "url": "https://packagist.phpcomposer.com"
+    }
+  },
+  "autoload":{
+        "classmap":[
+            "common/box.php",
+            "common/db.php",
+            "common/log.php",
+            "app/controller/controller.php"
+        ],
+        "files":[
+            "common/function.php"
+        ]
+    }
+}
