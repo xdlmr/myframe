@@ -10,6 +10,7 @@ class DB {
     }
     
     public static function getInstance($database = DB_NAME) {
+        // var_dump($database);
         if(!isset(self ::$_instances[$database]) || is_null(self ::$_instances[$database])) {
             $db = new \Medoo\Medoo([
                 'database_type' => DB_TYPE,

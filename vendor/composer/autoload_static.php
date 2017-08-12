@@ -7,10 +7,27 @@ namespace Composer\Autoload;
 class ComposerStaticInit5630fa7e608591ab94b1bdd6e1d9fd87
 {
     public static $files = array (
+        'bf9f5270ae66ac6fa0290b4bf47867b7' => __DIR__ . '/..' . '/adodb/adodb-php/adodb.inc.php',
         '70c2cc8e471afe501c2cdffcff4501b1' => __DIR__ . '/../..' . '/common/function.php',
     );
 
     public static $prefixLengthsPsr4 = array (
+        'W' => 
+        array (
+            'Whoops\\' => 7,
+        ),
+        'T' => 
+        array (
+            'Twig\\' => 5,
+        ),
+        'P' => 
+        array (
+            'Psr\\Log\\' => 8,
+        ),
+        'M' => 
+        array (
+            'Medoo\\' => 6,
+        ),
         'K' => 
         array (
             'Klein\\' => 6,
@@ -18,6 +35,22 @@ class ComposerStaticInit5630fa7e608591ab94b1bdd6e1d9fd87
     );
 
     public static $prefixDirsPsr4 = array (
+        'Whoops\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/filp/whoops/src/Whoops',
+        ),
+        'Twig\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/twig/twig/src',
+        ),
+        'Psr\\Log\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
+        ),
+        'Medoo\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/catfan/medoo/src',
+        ),
         'Klein\\' => 
         array (
             0 => __DIR__ . '/..' . '/klein/klein/src/Klein',
@@ -25,6 +58,13 @@ class ComposerStaticInit5630fa7e608591ab94b1bdd6e1d9fd87
     );
 
     public static $prefixesPsr0 = array (
+        'T' => 
+        array (
+            'Twig_' => 
+            array (
+                0 => __DIR__ . '/..' . '/twig/twig/lib',
+            ),
+        ),
         'P' => 
         array (
             'PHPExcel' => 

@@ -94,5 +94,301 @@
             "routing",
             "sinatra"
         ]
+    },
+    {
+        "name": "twig/twig",
+        "version": "v1.34.4",
+        "version_normalized": "1.34.4.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/twigphp/Twig.git",
+            "reference": "f878bab48edb66ad9c6ed626bf817f60c6c096ee"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://files.phpcomposer.com/files/twigphp/Twig/f878bab48edb66ad9c6ed626bf817f60c6c096ee.zip",
+            "reference": "f878bab48edb66ad9c6ed626bf817f60c6c096ee",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.3"
+        },
+        "require-dev": {
+            "psr/container": "^1.0",
+            "symfony/debug": "~2.7",
+            "symfony/phpunit-bridge": "~3.3@dev"
+        },
+        "time": "2017-07-04T13:19:31+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.34-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Twig_": "lib/"
+            },
+            "psr-4": {
+                "Twig\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com",
+                "homepage": "http://fabien.potencier.org",
+                "role": "Lead Developer"
+            },
+            {
+                "name": "Armin Ronacher",
+                "email": "armin.ronacher@active-4.com",
+                "role": "Project Founder"
+            },
+            {
+                "name": "Twig Team",
+                "homepage": "http://twig.sensiolabs.org/contributors",
+                "role": "Contributors"
+            }
+        ],
+        "description": "Twig, the flexible, fast, and secure template language for PHP",
+        "homepage": "http://twig.sensiolabs.org",
+        "keywords": [
+            "templating"
+        ]
+    },
+    {
+        "name": "psr/log",
+        "version": "1.0.2",
+        "version_normalized": "1.0.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/php-fig/log.git",
+            "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://files.phpcomposer.com/files/php-fig/log/4ebe3a8bf773a19edfe0a84b6585ba3d401b724d.zip",
+            "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2016-10-10T12:19:37+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Psr\\Log\\": "Psr/Log/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "PHP-FIG",
+                "homepage": "http://www.php-fig.org/"
+            }
+        ],
+        "description": "Common interface for logging libraries",
+        "homepage": "https://github.com/php-fig/log",
+        "keywords": [
+            "log",
+            "psr",
+            "psr-3"
+        ]
+    },
+    {
+        "name": "filp/whoops",
+        "version": "2.1.10",
+        "version_normalized": "2.1.10.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/filp/whoops.git",
+            "reference": "ffbbd2c06c64b08fb47974eed5dbce4ca2bb0eec"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://files.phpcomposer.com/files/filp/whoops/ffbbd2c06c64b08fb47974eed5dbce4ca2bb0eec.zip",
+            "reference": "ffbbd2c06c64b08fb47974eed5dbce4ca2bb0eec",
+            "shasum": ""
+        },
+        "require": {
+            "php": "^5.5.9 || ^7.0",
+            "psr/log": "^1.0.1"
+        },
+        "require-dev": {
+            "mockery/mockery": "0.9.*",
+            "phpunit/phpunit": "^4.8 || ^5.0",
+            "symfony/var-dumper": "^2.6 || ^3.0"
+        },
+        "suggest": {
+            "symfony/var-dumper": "Pretty print complex values better with var-dumper available",
+            "whoops/soap": "Formats errors as SOAP responses"
+        },
+        "time": "2017-08-03T18:23:40+00:00",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "2.0-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Whoops\\": "src/Whoops/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Filipe Dobreira",
+                "homepage": "https://github.com/filp",
+                "role": "Developer"
+            }
+        ],
+        "description": "php error handling for cool kids",
+        "homepage": "https://filp.github.io/whoops/",
+        "keywords": [
+            "error",
+            "exception",
+            "handling",
+            "library",
+            "whoops",
+            "zf2"
+        ]
+    },
+    {
+        "name": "catfan/medoo",
+        "version": "v1.4.5",
+        "version_normalized": "1.4.5.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/catfan/Medoo.git",
+            "reference": "8ee8ae1c4df0fee3822a01333eab88893e548fcc"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://files.phpcomposer.com/files/catfan/Medoo/8ee8ae1c4df0fee3822a01333eab88893e548fcc.zip",
+            "reference": "8ee8ae1c4df0fee3822a01333eab88893e548fcc",
+            "shasum": ""
+        },
+        "require": {
+            "ext-pdo": "*",
+            "php": ">=5.4"
+        },
+        "suggest": {
+            "ext-pdo_dblib": "For MSSQL or Sybase database on Linux/UNIX platform",
+            "ext-pdo_mysql": "For MySQL or MariaDB database",
+            "ext-pdo_oci": "For Oracle database",
+            "ext-pdo_oci8": "For Oracle version 8 database",
+            "ext-pdo_pqsql": "For PostgreSQL database",
+            "ext-pdo_sqlite": "For SQLite database",
+            "ext-pdo_sqlsrv": "For MSSQL database on Windows platform"
+        },
+        "time": "2017-06-24T14:43:07+00:00",
+        "type": "framework",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Medoo\\": "/src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Angel Lai",
+                "email": "angel@catfan.me"
+            }
+        ],
+        "description": "The lightest PHP database framework to accelerate development",
+        "homepage": "https://medoo.in",
+        "keywords": [
+            "database",
+            "lightweight",
+            "mariadb",
+            "mssql",
+            "mysql",
+            "oracle",
+            "php framework",
+            "postgresql",
+            "sql",
+            "sqlite"
+        ]
+    },
+    {
+        "name": "adodb/adodb-php",
+        "version": "v5.20.9",
+        "version_normalized": "5.20.9.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/ADOdb/ADOdb.git",
+            "reference": "f601748cca1ccb86dfd427620a1692a70e681075"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://files.phpcomposer.com/files/ADOdb/ADOdb/f601748cca1ccb86dfd427620a1692a70e681075.zip",
+            "reference": "f601748cca1ccb86dfd427620a1692a70e681075",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.2"
+        },
+        "time": "2016-12-21T17:19:42+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "files": [
+                "adodb.inc.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause",
+            "LGPL-2.1"
+        ],
+        "authors": [
+            {
+                "name": "John Lim",
+                "email": "jlim@natsoft.com",
+                "role": "Author"
+            },
+            {
+                "name": "Damien Regad",
+                "role": "Current maintainer"
+            },
+            {
+                "name": "Mark Newnham",
+                "role": "Developer"
+            }
+        ],
+        "description": "ADOdb is a PHP database abstraction layer library",
+        "homepage": "http://adodb.org/",
+        "keywords": [
+            "abstraction",
+            "database",
+            "layer",
+            "library",
+            "php"
+        ]
     }
 ]

@@ -7,7 +7,8 @@ class Box {
     public static $_modelObjArr;
     
     public static function getObject($_appName, $_typeStr = 'controller', $product = '') {
-
+        // var_dump($_typeStr.'----');
+        // $_typeStr = ( $_typeStr === '' )?'controller':$_typeStr;
         $_appName = strtolower($_appName);
         $_typeStr = strtolower($_typeStr);
 
@@ -19,13 +20,11 @@ class Box {
         $appdir = ( $product === '' ) ? PRODUCT : $product;
         
         $file = WEB_ROOT . "/app/${_typeStr}/" . $appdir . "/${_appName}.${_typeStr}.php";
-        
         if(file_exists($file)) {
             
             include_once $file;
-
+            // var_dump($file);
             if(class_exists($className)) {
-                var_dump(self ::_createObject($className));
                 return self ::_createObject($className);
                 
             }

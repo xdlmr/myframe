@@ -1,7 +1,11 @@
 {
   "require": {
   	"phpexcel/phpexcel": "^1.7",
-    "klein/klein": "^2.1"
+    "klein/klein": "^2.1",
+    "twig/twig": "^1.33",
+    "filp/whoops": "^2.1",
+    "catfan/medoo": "^1.4",
+    "adodb/adodb-php": "^5.20"
   },
   "repositories": {
     "packagist": {
