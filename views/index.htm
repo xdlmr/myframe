@@ -2,22 +2,75 @@
 <html>
 <head>
 	<title></title>
+  <link rel="stylesheet" type="text/css" href="/views/host/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/views/host/css/pages/index.css">
 </head>
 <body>
-<div>登陆页</div>
-<a href="/home">首页</a>
-<script type="text/javascript" src="../host/js/jquery-2.2.3.min.js"></script>
+ <div class="contariner login" id="login">
+    <div class="col-lg-12">
+        <div class="content">
+            <form class="login-form" id="login" >
+                <div class="form-group">
+                    <div class="input-icon">
+                        <input class="form-control placeholder-no-fix" id="username" type="text" autocomplete="off" placeholder="请输入账号" name="username"  />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-icon">
+                        <input class="form-control placeholder-no-fix" id="password" type="text" autocomplete="off" placeholder="请输入密码" name="password" >
+                    </div>
+                </div>
+                <div class="form-actions">
+                    <a  href="javascript:void(0)"  id="loginBtn" class="btn blue text-center form-control" >登陆</a>
+                </div>
+            </form>
+        </div>
+
+    </div>
+  </div>
+<script type="text/javascript" src="/views/host/js/jquery-2.2.3.min.js"></script>
 <script type="text/javascript">
-	$(function(){
-        $.post({
-               url: '/index/dologin',
-               data: {userid:'001',pwd:'123456'},
-               dataType:'json',
-               success:function(res){
-                   console.log(res);
-               }
-           })
-     });
+	// $(function(){
+ //        $.post({
+ //               url: '/index/dologin',
+ //               data: {userid:'001',pwd:'123456'},
+ //               dataType:'json',
+ //               success:function(res){
+ //                   console.log(res);
+ //               }
+ //           })
+ //     });
+
+        $(function(){
+            
+            /*点击登录按钮，运行login()方法*/
+            $(document).delegate('#loginBtn', 'click', function(ev){
+                login();
+                return false;
+            })
+
+            document.onkeydown = function (event) { 
+                var e = event || window.event || arguments.callee.caller.arguments[0]; 
+                if (e && e.keyCode == 13) { 
+                    login();
+                    return false;
+                } 
+            };
+            /*login()方法，登录检测*/
+            function login(){
+                $.post({
+                   url: '/index/dologin',
+                   data: {userid:'001',pwd:'123456'},
+                   dataType:'json',
+                   success:function(res){
+                       console.log(res);
+                   }
+               })
+                window.location.replace("/home");
+            }
+
+        });
+   
 </script>
 </body>
 </html>

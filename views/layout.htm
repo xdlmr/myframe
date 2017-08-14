@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  
+  <link rel="stylesheet" type="text/css" href="/views/host/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/views/host/css/bootstrap-theme.css">
+  <link rel="stylesheet" type="text/css" href="/views/host/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="/views/host/css/pages/layout.css">
+   {% block needcss %}
+   {% endblock %}
+</head>
+<body>
+  {% block nav_bar%}
+  {% endblock %}
+ <nav class="navbar navbar-inverse navbar-fixed-top" id="nav">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+           <a href="/home">
+                  <img class="logo index" src="/views/host/images/layout_logo.png" style="cursor: pointer;" alt="logo"/>
+                  大数据融合平台                
+          </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" >
+          <ul class="nav navbar-nav nav-ul" >
+             <li class="dropdown web" > <a href="#" class="title" data-toggle="dropdown">前端开发</a>
+                <ul class="dropdown-menu ">
+                      <li><a href="/es?flag_menu=web" tabindex="-1">ESMAScript6</a></li>
+                      <li><a href="/vue?flag_menu=web" tabindex="-1">Vue.js</a></li>
+                      <li><a href="/bootstrap?flag_menu=web" tabindex="-1">Bootstrap</a></li>
+                </ul>
+            </li>
+            <li class="dropdown php" > <a href="/php?flag_menu=php" class="title">php开发</a>
+            </li>
+            <li class="dropdown app" > <a href="#" class="dropdown-toggle title" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">移动端开发</a>
+               <ul class="dropdown-menu ">
+                    <li><a href="/andro?flag_menu=app" tabindex="-1">安卓开发</a></li>
+                    <li><a href="/ios?flag_menu=app" tabindex="-1">IOS开发</a></li>
+              </ul>
+            </li>
+            <li class="dropdown bigdata" > <a class="dropdown-toggle title" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">大数据 </a>
+                <ul class="dropdown-menu ">
+                  <li><a href="/seedata?flag_menu=bigdata" tabindex="-1">可视化</a></li>
+                  <li><a href="/hadoop?flag_menu=JWXN" tabindex="-1">Hadoop</a></li>
+                </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+    {% block body %}
+    {% endblock %}
+
+
+    <script type="text/javascript" src="/views/host/js/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" src="/views/host/js/bootstrap.min.js"></script>
+    {% block page_script %}
+    {% endblock %}
+</body>
+</html>

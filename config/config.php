@@ -5,6 +5,7 @@ define("PRODUCT", 'gongan');
 
 
 // 数据库地址
+define('DRIVER', 'pgsql');
 define('DB_TYPE', 'pgsql');
 define('DB_IP', '127.0.0.1');
 define('DB_PORT', '5432');

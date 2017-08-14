@@ -1,0 +1,44 @@
+/*nav css start*/
+#nav{
+	height: 62px;
+}
+.logo {
+    width: 60px;
+}
+.navbar-header a {
+    font-size: 20px;
+    color: #fff;
+}
+.navbar-header {
+    margin-right: 50px !important;
+}
+
+#nav .nav-ul li.dropdown {
+    line-height: 62px;
+    height: 62px;
+}
+#nav .nav-ul li a.title {
+    height: 62px;
+    line-height: 62px;
+    padding: 0 18px;
+    font-size: 16px;
+}
+#nav .nav-ul li>ul {
+    padding: 0;
+    background-color: #222;
+    min-width: 120px;
+}
+#nav .nav-ul li>ul>li {
+    text-align: center;
+}
+#nav .nav-ul li>ul>li a {
+    color: #9d9d9d;
+    height: 37px;
+    line-height: 37px;
+    display: block;
+    padding: 0px;
+}
+#nav .nav-ul li a:hover {
+    background-image: linear-gradient(to bottom,#080808 0,#0f0f0f 100%);
+    color: #fff;
+}
